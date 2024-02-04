@@ -1,5 +1,3 @@
-# Paws-and-Claws
-
 # Paws and Claws Website Project
 
 Welcome to the Paws and Claws website project repository! This project aims to create a user-friendly website for a pet-related business called Paws and Claws. The website provides information about various services, products, and resources related to pets, including dogs and cats.
