@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="icon" href="{{ url_for('static', filename='Images/favicon.png') }}">
+    <style>
+        *{
+        margin:0;
+        padding:0;
+    }
+    .container{
+        text-align:center;
+        background:rgb(193, 244, 254);
+    }
+    .header{
+        padding-top:60px;
+        color:black;
+        font-size:40px;
+        margin:auto;
+    }
+    .navigation a{
+            position: relative;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+            color:black;
+        }
+        .navigation a:hover{
+            background-color:rgb(235, 247, 250);
+        }
+        .logo{
+            margin-left: 4%;
+            padding-bottom: 50px;
+        }
+        .navigation{
+            margin-right:4%;
+        }
+    .sub-container{
+        max-width:1200px;
+        margin:auto;
+        padding:48px, 0;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .team{
+        margin:10px;
+        padding:22px;
+        max-width:30%;
+        cursor:pointer;
+        transition:0.4s;
+        box-sizing: border-box;
+    }
+    .team:hover{
+        background:rgb(214, 229, 243) ;
+    }
+    .team img{
+        width:200px;
+        height:200px;
+        padding-right: 50px;
+        padding-top: 30px;
+
+    }
+    .name{
+        padding:12px;
+        
+    }
+    .about{
+        margin:5px 5px;
+        font-weight: lighter;
+    
+    }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='Images/favicon.png') }}"  height="80" width="80" >
+            <p>PAWS & CLAWS</p>
+        </div>
+             <nav class="navigation">
+                <a href='/index'>Index</a>
+                <a href='/about'>About Us</a>
+                <a href="mailto:naveenapriya13@gmail.com">Mail Us</a>
+                 <a href='/login'>Login</a>
+                 <a href='/register'>Register</a>
+             </nav>
+        <div class="header">
+            <h1>About us</h1>
+        </div>
+        <div class="sub-container">
+        <div class="team">
+            <img src="{{ url_for('static', filename='Images/pro1-removebg1.png') }}" alt="profile Image" height="100px" >
+            <div class="name"><h3>NAVEENA PRIYA. N</h3></div>
+            <div class="about">
+                <h5>TEAM LEADER & <span>FRONT-END DEVELOPER</span></h5>
+                <br>
+                <p>I provide guidance, instruction, direction and leadership to my group for the purpose of achieving every milestone and result.Working closely with back-end colleague, I take care of the "frontend" or "client side". Once the page is shown in the browser, it still requires layout to look nice. In order to do this, I write CSS and HTML to tell browser how to visually display the page </p>
+            </div>
+            
+        </div>
+        <div class="team">
+            <img src="{{ url_for('static', filename='Images/pro1-removebg.png') }}" alt="profile Image" height="100px" >
+            <div class="name"><h3>PUNITHA. S</h3></div>
+            <h5>BACK-END<span>DEVELOPER</span></h5>
+            <br>
+            <div class="about">I use programming languages like Java, .NET and PHP for back-end development. These languages run on the server to create the webpage. That’s why we call it “server side” or “back-end”: When someone visits a website, the browser will fetch the page from the server. I also do integrate the website/app with other systems like other websites and CRM software.</div>
+            
+        </div>
+        <div class="team">
+            <img src="{{ url_for('static', filename='Images/pro1-removebg2.png') }}" alt="profile Image" height="100px" >
+            <div class="name"><h3>RANJINI. L</h3></div>
+            <div class="about">
+                <h5>THE QUALITY <span>TESTER</span></h5>
+                <br>
+                <p>This person tests every functionality that the team has made in every possible condition before the website becomes available to regular users. When something is not in order, he reports a bug to the developers.</p>
+            </div>
+        </div>
+        <div class="team">
+            <img src="{{ url_for('static', filename='Images/pro1-removebg.png') }}" alt="profile Image" height="100px" >
+            <div class="name"><h3>PRIYADHARSHINI. S</h3></div>
+                <div class="about">
+                    <h5>BACK-END<span>DEVELOPER</span></h5>
+                    <br>
+                    <div class="about">I use programming languages like Java, .NET and PHP for back-end development. These languages run on the server to create the webpage. That’s why we call it “server side” or “back-end”: When someone visits a website, the browser will fetch the page from the server. I also do integrate the website/app with other systems like other websites and CRM software.</div>
+                    
+                </div>
+            
+        </div>
+        <div class="team">
+            <img src="{{ url_for('static', filename='Images/pro1-removebg1.png') }}" alt="profile Image" height="100px" >
+            <div class="name"><h3>SHEREEN. A</h3></div>
+                <div class="about">
+                    <h5>FRONT-END <span>DEVELOPER</span></h5>
+                    <br><p>Working closely with back-end colleague, I take care of the "frontend" or "client side". Once the page is shown in the browser, it still requires layout to look nice. In order to do this, I write CSS and HTML to tell browser how to visually display the page </p>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
